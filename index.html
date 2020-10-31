@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de excusas</title>
+</head>
+<body>
+    <p id="excuse"></p>
+<script>
+
+let who = ['The dog','My grandma','His turtle','My bird'];
+let action = ['ate','peed','crushed','broke'];
+let what = ['my homework', 'the keys', 'the car'];
+let when = ['before the class','right on time','when I finished','during my lunch','while I was praying'];
+
+indexWho = Math.floor(Math.random()*who.length);
+indexAction = Math.floor(Math.random()*action.length);
+indexWhat = Math.floor(Math.random()*what.length);
+indexWhen = Math.floor(Math.random()*when.length);
+console.log(indexWho);
+console.log(indexAction);
+console.log(indexWhat);
+console.log(indexWhen);
+
+document.getElementById ("excuse").innerHTML = who[indexWho]+" "+action[indexAction]+" "+what[indexWhat]+" "+when[indexWhen];
+
+</script>
+
+</body>
+</html>
